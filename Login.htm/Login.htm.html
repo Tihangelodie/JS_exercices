@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Formulaire de récupération de mot de passe</title>
+    <script>
+      var login;
+      // on déclare la variable proposition
+      function Main() {
+        login = document.accueil.motdepasse.value;
+        // on enregistre la proposition dans la variable proposition
+        alert("Merci, votre mot de passe a bien été enregistré!");
+      }
+    </script>
+  </head>
+  <body>
+    <form name="accueil">
+      <h3>Ce site est sécurisé !</h3>
+      <input type="password" name="motdepasse" />
+      <p>Encodez votre mot de passe ici</p>
+      <input type="button" value="connexion" onclick="Main();" />
+    </form>
+  </body>
+</html>
