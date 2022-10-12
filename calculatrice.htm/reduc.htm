@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Créer une réduction</title>
+    <script>
+      var prixBD;
+      var prixreduitBD;
+      function Main() {
+        prixBD = document.formBD.prix.value;
+        prixreduitBD = prixBD * 0.7;
+        document.formBD.prixreduit.value = prixreduitBD;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calculez le prix d'une BD</h1>
+    <form name="formBD">
+      <input type="Text" name="prix" /> -3O%
+      <input type="Button" value=" = " onclick="Main();" />
+      <input type="Text" name="prixreduit" />
+    </form>
+  </body>
+</html>

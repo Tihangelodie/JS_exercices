@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Tronquer du texte</title>
+    <script>
+      var prop;
+      var prop6let;
+      function Main() {
+        prop = document.BD.prop.value;
+        // récupération de la proposition
+        prop6let = prop.substr(0, 6); // troncature de la variable prop
+        document.BD.echo.value = prop6let; // affichage de la variable prop6let
+      }
+    </script>
+  </head>
+  <body>
+    <form name="BD">
+      <h1>Proposez le nom d'un héros de BD contenant 6 lettres</h1>
+      <input type="text" name="prop" />
+      <input type="button" value="Répéter" onclick="Main();" />
+      <input type="Text" name="echo" />
+    </form>
+  </body>
+</html>

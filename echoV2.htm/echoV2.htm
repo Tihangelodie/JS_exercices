@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Pas de déclaration de variable</title>
+    <script>
+      function Main() {
+        injure = document.BD.prop.value;
+        // récupération de la valeur insérée
+        // la variable injure n'a pas été déclarée
+        document.BD.echo.value = injure;
+        // affichage de la variable injure dans le champ echo
+      }
+    </script>
+  </head>
+  <body>
+    <form name="BD">
+      <h1>Proposez une des injures du capitaine Haddock</h1>
+      <input type="text" name="prop" />
+      <input type="button" value="r&eacute;p&eacute;ter" onclick="Main()" />
+      <input type="text" name="echo" />
+    </form>
+  </body>
+</html>

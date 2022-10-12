@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Calculatrice</title>
+    <script>
+      var num1;
+      var num2;
+      var result;
+      function Main() {
+        num1 = parseFloat(document.calcul.num1.value);
+        num2 = parseFloat(document.calcul.num2.value);
+        result = num1 + num2;
+        document.calcul.result.value = result;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="calcul">
+      <input type="Text" name="num1" /> + <input type="Text" name="num2" />
+      <input type="Button" onclick="Main();" value=" = " />
+      <input type="Text" name="result" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Créer une calculatrice</title>
+    <script>
+      var nombre1;
+      var nombre2;
+      var resultat;
+      function Addition() {
+        nombre1 = parseFloat(document.calculatrice.nombre1.value);
+        // récupération du premier nombre inséré dans le formulaire dans la variable nombre1
+        // et conversion en type numérique
+        nombre2 = parseFloat(document.calculatrice.nombre2.value);
+        // récupération du deuxième nombre inséré dans le formulaire dans la variable nombre2
+        // et conversion en type numérique
+        resultat = nombre1 + nombre2;
+        // calcul de la somme des deux nombres
+        document.calculatrice.resultat.value = resultat;
+        // affichage du résultat dans le champs "resultat"
+      }
+      function Soustraction() {
+        nombre1 = parseFloat(document.calculatrice.nombre1.value);
+        // récupération du premier nombre inséré dans le formulaire dans la variable nombre1
+        // et conversion en type numérique
+        nombre2 = parseFloat(document.calculatrice.nombre2.value);
+        // récupération du deuxième nombre inséré dans le formulaire dans la variable nombre2
+        // et conversion en type numérique
+        resultat = nombre1 - nombre2;
+        // calcul de la différence des deux nombres
+        document.calculatrice.resultat.value = resultat;
+        // affichage du résultat dans le champs "resultat"
+      }
+      function Multiplication() {
+        nombre1 = parseFloat(document.calculatrice.nombre1.value);
+        // récupération du premier nombre inséré dans le formulaire dans la variable nombre1
+        // et conversion en type numérique
+        nombre2 = parseFloat(document.calculatrice.nombre2.value);
+        // récupération du deuxième nombre inséré dans le formulaire dans la variable nombre2
+        // et conversion en type numérique
+        resultat = nombre1 * nombre2;
+        // calcul de le produit des deux nombres
+        document.calculatrice.resultat.value = resultat;
+        // affichage du résultat dans le champs "resultat"
+      }
+      function Division() {
+        nombre1 = parseFloat(document.calculatrice.nombre1.value);
+        // récupération du premier nombre inséré dans le formulaire dans la variable nombre1
+        // et conversion en type numérique
+        nombre2 = parseFloat(document.calculatrice.nombre2.value);
+        // récupération du deuxième nombre inséré dans le formulaire dans la variable nombre2
+        // et conversion en type numérique
+        resultat = nombre1 / nombre2;
+        // calcul du quotient des deux nombres
+        document.calculatrice.resultat.value = resultat;
+        // affichage du résultat dans le champ "resultat"
+      }
+    </script>
+  </head>
+  <body>
+    <form name="calculatrice">
+      <input type="text" name="nombre1" />
+      <input type="button" value=" + " onclick="Addition();" />
+      <input type="button" value=" - " onclick="Soustraction();" />
+      <input type="button" value=" * " onclick="Multiplication();" />
+      <input type="button" value=" / " onclick="Division();" />
+      <input type="text" name="nombre2" /> =
+      <input type="text" name="resultat" />
+    </form>
+  </body>
+</html>
