@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Collection</title>
+    <script>
+      var total;
+      function Main() {
+        total = parseFloat(document.BD.spirou.value);
+        if (total > 45) {
+          alert("Vous avez presque toute la collection");
+        } else {
+          alert(
+            "Il vous manque encore quelques tomes avant que la collection soit complète"
+          );
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Spirou et Fantasio</h3>
+    <p>Combien de BD de Spirou & Fantasio avez-vous?</p>
+    <form name="BD">
+      <input type="Text" name="spirou" />
+      <input type="Button" value="ENREGISTRER" onclick="Main();" />
+    </form>
+  </body>
+</html>

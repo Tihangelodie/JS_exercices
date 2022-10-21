@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Aimez-vous le chocolat?</title>
+    <script>
+      var reponse;
+      function Main() {
+        reponse = parseFloat(document.choco.reponse.value);
+        if (reponse == 0) {
+          alert("Vous devriez ! Le chocolat est bon pour la santé !");
+        } else if (reponse < 5) {
+          alert("Vive le chocolat !");
+        } else {
+          alert("La gourmandise est un vilain défaut !");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="choco">
+      <h3>Combien de fois par jour mangez-vous du chocolat ?</h3>
+      <input type="text" name="reponse" /> fois<br />
+      <input type="button" value="Enregistrer la réponse" onClick="Main();" />
+    </form>
+  </body>
+</html>
