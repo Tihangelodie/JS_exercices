@@ -1,0 +1,9 @@
+if(condition A){
+   // Instruction A
+}else{
+   if(condition B){
+        // Instruction B1
+   }else{
+          // Instruction B2
+   }
+}

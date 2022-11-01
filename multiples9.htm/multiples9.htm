@@ -1,0 +1,17 @@
+<head> 
+	<title>Afficher tous les nombres de 1 à 100. Les multiples de 9 doivent être affichés en gras.</title> 
+			<script> 
+        function Main(){
+          for(i=1 ; i<101 ; i=i+1){
+            if(i/9 == parseInt(i/9)){
+              document.write("<b>" + i + "</b> ") ;
+            }else{
+              document.write(i + " ") ;
+            }
+          }
+      }
+		</script> 
+</head>
+<body onload="Main();">
+</body>
+</html> 
